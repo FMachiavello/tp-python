@@ -10,7 +10,7 @@ class testEJ3(unittest.TestCase):
         self.assertEqual(EJ3.numTriangular(1), 1)
 
     def test_isnumeric_numTriangular(self):
-        self.assertEqual(EJ3.numTriangular('a'),None)
-        self.assertNotEqual(EJ3.numTriangular(1),None)
+        self.assertEqual(EJ3.numTriangular(1), True)
+        self.assertEqual(EJ3.numTriangular('a'), False)
 if __name__ == "__main__":
     unittest.main()
