@@ -45,4 +45,5 @@ for i in range(2):
         else:
             l3.append(c)
             okey3 = True
+
 pitagoras(l1, l2, l3)
