@@ -24,6 +24,7 @@ for i in range(2):
         letra = "x"
     else:
         letra = "y"
+	if l1[0] == l2[0] and l1[1] == l2[2]
     while not okey1:
         a = input("Ingrese una coordenada " + letra + "1 >>> ")
         if a.isnumeric() is False:
@@ -34,7 +35,7 @@ for i in range(2):
     while not okey2:
         b = input("Ingrese una coordenada " + letra + "2 >>> ")
         if b.isnumeric() is False:
-            print("Ingrese solo numeros.")
+            print("Ingrese solo numeros.") 
         else:
             l2.append(b)
             okey2 = True
