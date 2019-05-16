@@ -5,4 +5,5 @@ def milPalabras(palabra):
     while palabra.isalpha() is False:
             palabra = input("Error, ingrese palabras o letras: ")
     for i in range(1, 1001):  # Recorre de 1 a 1000
-        print(palabra, end=" ")  # Muestra la palabra en una misma fila
+        # print(palabra, end=" ") Muestra la palabra en una misma fila
+        return (palabra + " ") * 1000
