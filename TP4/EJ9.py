@@ -4,14 +4,11 @@ def evaluaciones(ejercicios, aprobar, correctas):
     porcentaje que necesita el alumno para aprobar y cuantos ejercicios
     realizo correctamente el alumno. Devuelve en pantalla si el alumno esta
     aprobado y el porcentaje de ejercicios correctos"""
-    if not ejercicios[0] == "*":
-        if type(ejercicios) not in [int, float]:
+    if type(ejercicios) not in [int, float] and type(ejercicios) not in [str]:
             raise TypeError("No se puede calcular")
-    if not aprobar[0] == "*":
-        if type(aprobar) not in [int, float]:
+    if type(aprobar) not in [int, float] and type(aprobar) not in [str]:
             raise TypeError("No se puede calcular")
-    if not correctas[0] == "*":
-        if type(correctas) not in [int, float]:
+    if type(correctas) not in [int, float] and type(correctas) not in [str]:
             raise TypeError("No se puede calcular")
     if ejercicios < 0 or correctas < 0 or aprobar < 1 or aprobar > 100:
         raise ValueError("No se pueden ingresar numeros negativos")
@@ -37,4 +34,3 @@ def evaluaciones(ejercicios, aprobar, correctas):
     correctas = input("¿Cuántas son correctas?('*' finalizar): ")
     if correctas == "*":
         return("Fin")
-evaluaciones("*", "*", "*")

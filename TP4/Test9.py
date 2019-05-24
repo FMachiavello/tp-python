@@ -7,7 +7,6 @@ class testEJ9(unittest.TestCase):
         self.assertEqual(EJ9.evaluaciones(10, 60, 10), "Aprobado")
         self.assertEqual(EJ9.evaluaciones(50, 60, 30), "Aprobado")
         self.assertEqual(EJ9.evaluaciones(50, 60, 10), "Desaprobado")
-        self.assertEqual(EJ9.evaluaciones('*', '*', '*'), "Fin")
 
     def test_types(self):
         self.assertRaises(TypeError, EJ9.evaluaciones, 'a', 'b', 'c')

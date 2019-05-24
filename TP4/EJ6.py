@@ -1,7 +1,7 @@
 import math
-a = float(input("Ingrese el término cuadrático de la función: "))
-b = float(input("Ingrese el término lineal de la función: "))
-c = float(input("Ingrese el término independiente de la función: "))
+# a = float(input("Ingrese el término cuadrático de la función: "))
+# b = float(input("Ingrese el término lineal de la función: "))
+# c = float(input("Ingrese el término independiente de la función: "))
 
 
 def maxOMin(a, b, c):
@@ -27,11 +27,12 @@ def maxOMin(a, b, c):
     else:
         # A no puede valer cero.
         print("El término cuadrático de la función no puede valer 0.")
-maxOMin(a, b, c)
+    return(xv, yv)
+maxOMin(5, 4, 3)
 
-a = float(input("Ingrese el término cuadrático de la función: "))
-b = float(input("Ingrese el término lineal de la función: "))
-c = float(input("Ingrese el término independiente de la función: "))
+# a = float(input("Ingrese el término cuadrático de la función: "))
+# b = float(input("Ingrese el término lineal de la función: "))
+# c = float(input("Ingrese el término independiente de la función: "))
 
 
 def raices(a, b, c):
@@ -51,12 +52,17 @@ def raices(a, b, c):
                 raizuno = ((-b + math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
                 raizdos = ((-b - math.sqrt((b ** 2) - (4 * a * c))) / (2 * a))
                 print("Las raíces son {", raizdos, ",", raizuno, "}")
-raices(a, b, c)
+    return(raizdos, raizuno)
+raices(-1, -4, 5)
 
-pendiente = float(input("Ingrese la pendiente de la primera función: "))
-origen = float(input("Ingrese la ordenada origen de la primera función: "))
-pendiente2 = float(input("Ingrese la pendiente de la segunda función: "))
-origen2 = float(input("Ingrese la ordena origen de la segunda función: "))
+# pendiente = float(input("Ingrese la pendiente de la primera función: "))
+# origen = float(input("Ingrese la ordenada origen de la primera función: "))
+# pendiente2 = float(input("Ingrese la pendiente de la segunda función: "))
+# origen2 = float(input("Ingrese la ordena origen de la segunda función: "))
+pendiente = 5
+origen = 2
+pendiente2 = 4
+origen2 = 3
 
 
 def interseccion(pendiente, origen, pendiente2, origen2):
@@ -70,7 +76,8 @@ def interseccion(pendiente, origen, pendiente2, origen2):
     else:
         # Calcula la interseccion entre las rectas
         resultadox = origen - origen2 / pendiente2 - pendiente
-        resultadoy = pendiente * resultadox + orisgen
+        resultadoy = pendiente * resultadox + origen
         print("La interseccion de las rectas se encuentra en",
               "(", resultadox,  ", ", resultadoy, ")")
-interseccion(pendiente, origen, pendiente2, origen2)
+    return(resultadox, resultadoy)
+interseccion(5, 2, 4, 3)
