@@ -1,13 +1,13 @@
-okey1 = False
-while not okey1:
-    a = input("Ingrese un número: ")
-    if a.isnumeric() is False:
-        print("Ingrese solo numeros.")
-    elif a == "0":
-        print("El numero no puede ser cero.")
-    else:
-        numero = int(a)
-        okey1 = True
+# okey1 = False
+# while not okey1:
+#     a = input("Ingrese un número: ")
+#     if a.isnumeric() is False:
+#         print("Ingrese solo numeros.")
+#     elif a == "0":
+#         print("El numero no puede ser cero.")
+#     else:
+#         numero = int(a)
+#         okey1 = True
 
 
 def MatrizIdentidad(dimension):
@@ -20,4 +20,4 @@ def MatrizIdentidad(dimension):
         g[i][i] = 1  # Añade un uno en la posicion 1,1 2,2 y asi sucesivamente.
     for i in range(0, dimension):
         print(g[i])  # Muestra la matriz creada.
-MatrizIdentidad(numero)
+    return g
