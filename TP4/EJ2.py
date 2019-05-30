@@ -1,9 +1,11 @@
 def domino():
+    contador = 0
     """ Devuelve todas las 28 fichas del domino
         . Este codigo separa la parte superior de la inferior para poder
          mostrar la ficha tradicional."""
     fichas_inferior = 0     # La parte inferior empieza en 0.
     for fichas_superior in range(0, 28):  # Recorre las 28 fichas.
+        contador = contador + 1
         if fichas_superior <= 6:   # Las fichas del cero son 7.
             linea_uno = "     "  # Primera linea de numeros de la ficha.
             linea_dos = "     "  # Segunda linea de numeros de la ficha.
@@ -43,7 +45,7 @@ def domino():
         print("│" + linea_uno + "│")
         print("│" + linea_dos + "│")
         print("│" + linea_tres + "│")
-        print("╞═════╡")
+        print("╞═════╡"      " ficha numero", contador, "de", 28)
         if fichas_inferior == 0:
             linea_uno = "     "
             linea_dos = "     "
@@ -79,4 +81,5 @@ def domino():
         fichas_inferior = fichas_inferior + 1  # Recorre las fichas por numero.
         if fichas_inferior == 7:  # Cuando la cantidad de fichas llega a 7.
             fichas_inferior = 0 + cantidad_fichas   # Reduce las fichas x num.
+    return contador
 domino()
