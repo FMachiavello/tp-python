@@ -1,8 +1,8 @@
-TP5/bin
+/bin
 TP5/include
-TP5/lib
+/lib
 TP5/lib64
 TP5/pyvenv.cfg
-TP5/share
+/share
 TP5/include/
 
