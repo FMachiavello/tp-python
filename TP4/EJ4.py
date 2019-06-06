@@ -40,6 +40,32 @@ def pitagoras(lx, ly):
                 print("Todas las coordenadas son iguales.")
                 print("No puedo calcular nada.")
     else:
+<<<<<<< HEAD
+        letra = "y"
+    while not okey1:
+        a = input("Ingrese una coordenada " + letra + "1 >>> ")
+        if a.isnumeric() is False:
+            print("Ingrese solo numeros.")
+        else:
+            l1.append(a)
+            okey1 = True
+    while not okey2:
+        b = input("Ingrese una coordenada " + letra + "2 >>> ")
+        if b.isnumeric() is False:
+            print("Ingrese solo numeros.")
+        else:
+            l2.append(b)
+            okey2 = True
+    while not okey3:
+        c = input("Ingrese una coordenada " + letra + "3 >>> ")
+        if c.isnumeric() is False:
+            print("Ingrese solo numeros.")
+        else:
+            l3.append(c)
+            okey3 = True
+
+pitagoras(l1, l2, l3)
+=======
         if(h1 > h2 and h1 > h3):  # Compara si la hipotenusa1 es la mas lejana.
             print("la cordenada mas lejana es >>> (", lx[0], ";", ly[0], ")")
             return(lx[0], ly[0])
@@ -50,3 +76,4 @@ def pitagoras(lx, ly):
             print("la cordenada mas lejana es >>> (", lx[2], ";", ly[2], ")")
             return(lx[2], ly[2])
 
+>>>>>>> b82af1983a3b74358863fe88ab4b77db971b7afa
