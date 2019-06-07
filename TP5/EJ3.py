@@ -1,4 +1,5 @@
 def contDeVocales(cadena):
+    """Cuenta la cantidad de vocales que aparecen en una cadena"""
     if type(cadena) not in [str]:
         raise TypeError("Ingrese una cadena valida")
     cadena = cadena.casefold()

@@ -3,52 +3,49 @@ from timer import cuentaRegresiva
 
 
 def contraseña(passw):
-    code = "Luna"
+    """Permite ingresar una contraseña establecida. Hasta que no se haya ingresado
+    correctamente el programa no finlaiza"""
+    code = "Luna"  # Contraseña
     while passw != code:
         n = 5
         for i in range(1, n + 1):
             cont = n - (i - 1)
             if cont == 5:
-                print(False)
-                num = 5
-                cuentaRegresiva(num)
+                cuentaRegresiva(5)
+                print("Quedan 5 intentos")
                 passw = getpass.getpass("CONTRASEÑA:")
                 if passw == code:
                     print(True)
                     return(True)
             elif cont == 4:
-                print(False)
-                num = 10
-                cuentaRegresiva(num)
+                cuentaRegresiva(10)
+                print("Quedan 4 intentos")
                 passw = getpass.getpass("CONTRASEÑA:")
                 if passw == code:
                     print(True)
                     return(True)
             elif cont == 3:
-                print(False)
-                num = 15
-                cuentaRegresiva(num)
+                cuentaRegresiva(15)
+                print("Quedan 3 intentos")
                 passw = getpass.getpass("CONTRASEÑA:")
                 if passw == code:
                     print(True)
                     return(True)
             elif cont == 2:
-                print(False)
-                num = 20
-                cuentaRegresiva(num)
+                cuentaRegresiva(20)
+                print("Quedan 2 intentos")
                 passw = getpass.getpass("CONTRASEÑA:")
                 if passw == code:
                     print(True)
                     return(True)
             else:
-                print(False)
-                num = 25
-                cuentaRegresiva(num)
+                cuentaRegresiva(25)
+                print("Queda 1 intento")
                 passw = getpass.getpass("CONTRASEÑA:")
                 if passw == code:
                     print(True)
                     return(True)
         print("Ha superado el limite de intentos")
-        return(False)
+        return
     print(True)
     return(True)

@@ -1,4 +1,5 @@
 def contDeLetras(cadena):
+    """Determina si en la cadena ingresada hay mas letras 'A' o letras 'B'"""
     if type(cadena) not in [str]:
         raise TypeError("Ingrese una cadena valida")
     cadena = cadena.casefold()
